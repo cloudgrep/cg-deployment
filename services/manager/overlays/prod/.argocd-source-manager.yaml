@@ -1,0 +1,3 @@
+kustomize:
+  images:
+  - us-docker.pkg.dev/cloudgrep/cloudgrep-images/manager=us-docker.pkg.dev/cloudgrep/cloudgrep-images/manager:latest

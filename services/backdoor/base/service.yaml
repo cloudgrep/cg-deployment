@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: backdoor
+  labels:
+    app: backdoor
+spec:
+  type: ClusterIP
+  selector:
+    app: backdoor
+  ports:
+    - name: http
+      port: 80
+      targetPort: http
+      protocol: TCP
