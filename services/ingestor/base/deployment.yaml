@@ -23,7 +23,7 @@ spec:
               name: http
           envFrom:
             - secretRef:
-                name: ingestor-secrets
+                name: cloudgrep-ingestor-secrets
           resources:
             requests:
               cpu: 100m

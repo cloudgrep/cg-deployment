@@ -23,7 +23,7 @@ spec:
               name: http
           envFrom:
             - secretRef:
-                name: backdoor-secrets
+                name: cloudgrep-backdoor-secrets
           resources:
             requests:
               cpu: 250m
