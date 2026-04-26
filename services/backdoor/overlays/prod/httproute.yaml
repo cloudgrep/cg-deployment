@@ -17,5 +17,5 @@ spec:
             type: PathPrefix
             value: /
       backendRefs:
-        - name: backdoor
+        - name: prod-backdoor
           port: 80
