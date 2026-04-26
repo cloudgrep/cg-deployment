@@ -1,0 +1,19 @@
+apiVersion: networking.gke.io/v1
+kind: HealthCheckPolicy
+metadata:
+  name: backdoor-healthcheck
+spec:
+  default:
+    config:
+      type: HTTP
+      httpHealthCheck:
+        port: 8000
+        requestPath: /health
+    checkIntervalSec: 10
+    timeoutSec: 5
+    healthyThreshold: 1
+    unhealthyThreshold: 3
+  targetRef:
+    group: ""
+    kind: Service
+    name: prod-backdoor

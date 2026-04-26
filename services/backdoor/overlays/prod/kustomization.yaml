@@ -7,6 +7,7 @@ namePrefix: prod-
 resources:
   - ../../base
   - httproute.yaml
+  - healthcheck.yaml
 
 images:
   - name: us-docker.pkg.dev/cloudgrep/cloudgrep-images/backdoor
