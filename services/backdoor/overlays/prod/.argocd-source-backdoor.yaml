@@ -1,3 +1,3 @@
 kustomize:
   images:
-  - us-docker.pkg.dev/cloudgrep/cloudgrep-images/backdoor=us-docker.pkg.dev/cloudgrep/cloudgrep-images/backdoor:latest
+  - us-docker.pkg.dev/cloudgrep/cloudgrep-images/backdoor=us-docker.pkg.dev/cloudgrep/cloudgrep-images/backdoor:prod_78829c0
